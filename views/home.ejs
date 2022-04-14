@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+<a class="btn btn-primary compose-btn" href="/compose"> Compose a post </a>
+<h1>Home</h1>
+<% if(renderPosts.length>0){%>
+<p>
+  You have <%= renderPosts.length%> post<%=renderPosts.length===1?'':'s';%>:
+</p>
+<%}else{%>
+<p>You have no posts! How about to create one?</p>
+<%}%> <% renderPosts.forEach(p=>{ %>
+<h1><%= p.title %></h1>
+<p>
+  <%= p.content.slice(0,100)+'...' %><a href="/posts/<%= p._id %>">Read More</a>
+</p>
+<% })%> <%- include('partials/footer'); -%>

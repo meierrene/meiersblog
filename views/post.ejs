@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<form action="/delete" method="post">
+  <a class="btn btn-primary compose-btn" href="/compose"> Compose a post </a>
+  <h1><%= renderSelectedPost.title %></h1>
+  <p><%= renderSelectedPost.content %></p>
+  <div class="buttons-nav">
+    <a class="btn btn-primary compose-btn" href="/"> Go back </a>
+    <button
+      class="btn btn-primary"
+      type="submit"
+      name="deleteBtn"
+      value="<%= renderSelectedPost._id %>"
+      onchange="this.form.submit()"
+    >
+      Delete post
+    </button>
+  </div>
+</form>
+<%- include('partials/footer'); -%>
