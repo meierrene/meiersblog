@@ -1,4 +1,4 @@
-This blog was created using Node.js, EJS and NoSQL based on CRUD's database basic operation from MongoDB.
+This blog was created using <code>Node.js</code>, <code>EJS</code> and <code>NoSQL</code> based on CRUD's database basic operation from <code>MongoDB</code> using my personal DB cluster. (Fell fre to update it!).
 The current features you can:
 - Create a post;
 - Find the post;
