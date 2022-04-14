@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 mongoose.connect(
-  'mongodb+srv://dbMeier:M5e6i7e8r9@defaultcluster.vh6up.mongodb.net/MeiersBlog?retryWrites=true&w=majority'
+  'mongodb+srv://masteruser:102030@defaultcluster.vh6up.mongodb.net/MeiersBlog?retryWrites=true&w=majority'
 );
 
 const Post = mongoose.model('Post', { title: String, content: String });
